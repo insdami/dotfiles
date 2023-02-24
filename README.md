@@ -19,3 +19,5 @@ printf 'run\tprivate/var/run\n' | sudo tee -a /etc/synthetic.conf # read below
 > nix itself has just “nix” inside /etc/synthetic.conf (an empty folder at /nix), it’ll then mount an apfs volume containing your nix store above it.
 > 
 > nix-darwin needs a symlink from /run to /private/var/run to function, that’s whats added in the printf|tee line 
+
+ref: https://xyno.space/post/nix-darwin-introduction
