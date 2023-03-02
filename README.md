@@ -4,18 +4,11 @@
 
 1. Install [nix](https://nixos.org/download.html#nix-install-macos)
 2. Enable [Flakes](https://nixos.wiki/wiki/Flakes#Permanent)
-3. Install [Home Manager](https://nix-community.github.io/home-manager/index.html#sec-install-standalone)
+3. Install [Home Manager via Flakes](https://nix-community.github.io/home-manager/index.html#ch-nix-flakes) by the [standalone installation](https://nix-community.github.io/home-manager/index.html#sec-flakes-standalone)
 
-### Point to dotfiles
-Home manager looks for `~/.config/nixpkgs/home.nix` folder in that location, so we'll create a symlink from the `dotfiles` folder.
-
-```
-cd ~/.config
-ln -s <path>/dotfiles nixpkgs
-```
 
 ### Known issues
-As of today, the latest nix version has some [issues](https://github.com/NixOS/nix/issues/7937) and the workaround is to downgrade to the previous version.
+As of today, the latest nix version(2.14.0) has some [issues](https://github.com/NixOS/nix/issues/7937) and the workaround is to downgrade to the previous version.
 
 ```
 sh <(curl -L https://releases.nixos.org/nix/nix-2.13.3/install)
