@@ -1,5 +1,7 @@
 # Home Manager & Flakes
 
+[Modules](./hosts/modules)
+
 ## Installation MacOS
 
 1. Install [nix](https://nixos.org/download.html#nix-install-macos)
