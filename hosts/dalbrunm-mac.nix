@@ -4,6 +4,7 @@
   imports = [
     ./modules/shell.nix
     ./modules/basic.nix
+    ./modules/neovim.nix
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.

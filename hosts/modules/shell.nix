@@ -17,7 +17,7 @@
 
        # Functionz
        fpath+=~/dotfiles/hosts/modules/zsh-functions
-       autoload -Uz hms
+       autoload -Uz hms 
 
         ## include config generated via "p10k configure" manually; 'p10k configure' can't write to zshrc itself
        [[ ! -f ~/dotfiles/hosts/modules/p10k-config/.p10k.zsh ]] || source ~/dotfiles/hosts/modules/p10k-config/.p10k.zsh    
@@ -31,7 +31,9 @@
     shellAliases = {
       findport = "sudo lsof -iTCP -sTCP:LISTEN -n -P | grep";
       fz = "fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'";
-      hmd = "cd ~/dotfiles"
+      hmd = "cd ~/dotfiles";
+      v = "nvim";
+      ws = "cd ~/workspace";
     };
     
     history = {
