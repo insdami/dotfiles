@@ -1,10 +1,10 @@
 { config, pkgs, pkgsUnstable, libs, ... }:
 {
   home.packages = with pkgs; [
-    fish
     fzf
 
     bottom
+    bat
     
     tree
     du-dust

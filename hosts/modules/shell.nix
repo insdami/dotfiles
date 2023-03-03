@@ -3,33 +3,68 @@
   # ZSH
   programs.zsh = {
     enable = true;
+    enableAutosuggestions = true;
+    enableCompletion = true;
 
     initExtra = ''
        export ZSH=${pkgs.oh-my-zsh}/share/oh-my-zsh/
        export FZF_BASE=${pkgs.fzf}/share/fzf/
-       # Customize your oh-my-zsh options here
-       ZSH_THEME="robbyrussell"
-       plugins=(git fzf )
-       HISTFILESIZE=500000
-       HISTSIZE=500000
-       setopt SHARE_HISTORY
-       setopt HIST_IGNORE_ALL_DUPS
-       setopt HIST_IGNORE_DUPS
+       export EDITOR=nvim
+
        setopt INC_APPEND_HISTORY
-       autoload -U compinit && compinit
        unsetopt menu_complete
        setopt completealiases
-    
-       if [ -f ~/.aliases ]; then
-         source ~/.aliases
-       fi
+
+       # Functionz
+       fpath+=~/dotfiles/hosts/modules/zsh-functions
+       autoload -Uz hms
 
         ## include config generated via "p10k configure" manually; 'p10k configure' can't write to zshrc itself
        [[ ! -f ~/dotfiles/hosts/modules/p10k-config/.p10k.zsh ]] || source ~/dotfiles/hosts/modules/p10k-config/.p10k.zsh    
 
-       source $ZSH/oh-my-zsh.sh
      '';
 
-    initExtraBeforeCompInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    initExtraBeforeCompInit = ''
+      source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
+    '';
+    
+    shellAliases = {
+      findport = "sudo lsof -iTCP -sTCP:LISTEN -n -P | grep";
+      fz = "fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'";
+      hmd = "cd ~/dotfiles"
+    };
+    
+    history = {
+      extended = true;
+      ignoreDups = true;
+      share = true;
+      size = 100000;
+    };
+     
+    oh-my-zsh = {
+      enable = true;
+      plugins=["git" "fzf"];
+    };
+
+    plugins = with pkgs; [
+      {
+        name = "zsh-syntax-highlighting";
+        src = fetchFromGitHub {
+          owner = "zsh-users";
+          repo = "zsh-syntax-highlighting";
+          rev = "0.6.0";
+          sha256 = "0zmq66dzasmr5pwribyh4kbkk23jxbpdw4rjxx0i7dx8jjp2lzl4";
+        };
+        file = "zsh-syntax-highlighting.zsh";
+      }
+    ];
+    
   };
+
+  programs.fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+  
+  programs.dircolors.enable = true;
 }

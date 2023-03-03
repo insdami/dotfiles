@@ -1,0 +1,7 @@
+hms() {
+  pushd ~/dotfiles
+  home-manager switch --flake .#$1
+  popd
+}
+
+hms
