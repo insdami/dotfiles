@@ -45,7 +45,7 @@
      
     oh-my-zsh = {
       enable = true;
-      plugins=["git" "fzf"];
+      plugins=["git" "fzf" "jump"];
     };
 
     plugins = with pkgs; [

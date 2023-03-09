@@ -6,6 +6,8 @@
     ./modules/basic.nix
     ./modules/neovim.nix
     ./modules/git.nix
+    ./modules/dev.nix
+    ./modules/oci.nix
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -24,4 +26,18 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    allowUnsupportedSystem = true;
+  };
+
+  home.sessionPath = [
+    "$HOME/.rd/bin" # Rancher Desktop
+  ];
+
+  programs.zsh.initExtra = ''
+    export PATH="$HOME/.rd/bin:$PATH"
+  '';
+
+
 }
