@@ -33,7 +33,9 @@
       fz = "fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'";
       hmd = "cd ~/dotfiles";
       v = "nvim";
-      ws = "cd ~/workspace";
+      k = "kubectl";
+      kx = "kubectx";
+      kn = "kubens";
     };
     
     history = {

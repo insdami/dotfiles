@@ -15,6 +15,7 @@
     du-dust
 
     wget
+    ripgrep
     jq
     zip
     pigz
@@ -29,7 +30,6 @@
   ];
   
   programs.sioyek.enable = true;
-  
-
 
 }
+

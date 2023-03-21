@@ -31,13 +31,5 @@
     allowUnsupportedSystem = true;
   };
 
-  home.sessionPath = [
-    "$HOME/.rd/bin" # Rancher Desktop
-  ];
-
-  programs.zsh.initExtra = ''
-    export PATH="$HOME/.rd/bin:$PATH"
-  '';
-
 
 }

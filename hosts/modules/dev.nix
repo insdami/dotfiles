@@ -14,12 +14,13 @@
 
   home.packages = with pkgs; [
     jetbrains.idea-community
-    
 
     kubectl
     kubectx
     kcat
     colima
+    docker
+    docker-compose
     lazydocker
   ];
 
