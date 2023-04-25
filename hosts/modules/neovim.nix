@@ -9,6 +9,7 @@
       vim-nix
       vim-markdown
       markdown-preview-nvim
+      vim-markdown-toc
 
     ];
     extraConfig = (builtins.concatStringsSep "\n" [

@@ -13,11 +13,16 @@
 
 
   home.packages = with pkgs; [
+    # Editor
     jetbrains.idea-community
 
+    # K8s
     kubectl
     kubectx
     kcat
+    stern # multiple container tail
+
+    # Docker
     colima
     docker
     docker-compose
