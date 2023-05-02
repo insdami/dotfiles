@@ -60,3 +60,6 @@ endfunction
 " Display tabs and trailing spaces visually
 set list listchars=tab:\ \ ,trail:·
 
+set spelllang=en
+set spellfile=$HOME/dotfiles/hosts/modules/vim/en.utf-8.add
+
