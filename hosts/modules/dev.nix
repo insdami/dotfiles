@@ -8,11 +8,14 @@
   programs.direnv.nix-direnv.enable = true;
 
   home.shellAliases = {
-    colima-start = "colima start --arch x86_64 --memory 8 --kubernetes";
+    colima-start = "colima start --arch aarch64 --memory 8";
   };
 
 
   home.packages = with pkgs; [
+    # Utils
+    mkcert
+
     # Editor
     jetbrains.idea-community
 

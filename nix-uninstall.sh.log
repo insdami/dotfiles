@@ -1,0 +1,63 @@
+20230509.1619 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+backing up nix-enabled dot file and restoring original: /etc/bash.bashrc
+20230509.1620 - Completed nix removal run.
+SUCCESS - probably. Minor problem during nix removal steps. It's likely safe to proceed and reboot but check the log first.
+
+20230509.1854 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+killing and removing launch daemon org.nixos.darwin-store
+killing and removing launch daemon org.nixos.nix-daemon
+Deleting 32 nix users
+Deleting nixbld group
+backing up nix-enabled dot file and restoring original: /etc/bash.bashrc
+backing up nix-enabled dot file and restoring original: /etc/bashrc
+backing up nix-enabled dot file and restoring original: /etc/zshrc
+20230509.1855 - Completed nix removal run.
+SUCCESS - probably. Minor problem during nix removal steps. It's likely safe to proceed and reboot but check the log first.
+
+20230509.1857 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+killing and removing launch daemon org.nixos.darwin-store
+Deleting 32 nix users
+Deleting nixbld group
+backing up nix-enabled dot file and restoring original: /etc/bash.bashrc
+backing up nix-enabled dot file and restoring original: /etc/bashrc
+backing up nix-enabled dot file and restoring original: /etc/zshrc
+20230509.1857 - Completed nix removal run.
+SUCCESS - probably. Minor problem during nix removal steps. It's likely safe to proceed and reboot but check the log first.
+
+20230509.1857 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+Deleting nixbld group
+20230509.1857 - Completed nix removal run.
+SUCCESS. Nix removal steps finished. Reboot to complete the process.
+
+20230509.1951 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+killing and removing launch daemon org.nixos.darwin-store
+Deleting 32 nix users
+Deleting nixbld group
+backing up nix-enabled dot file and restoring original: /etc/bash.bashrc
+backing up nix-enabled dot file and restoring original: /etc/bashrc
+backing up nix-enabled dot file and restoring original: /etc/zshrc
+20230509.1951 - Completed nix removal run.
+SUCCESS - probably. Minor problem during nix removal steps. It's likely safe to proceed and reboot but check the log first.
+
+20230509.1951 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+Deleting nixbld group
+20230509.1951 - Completed nix removal run.
+SUCCESS. Nix removal steps finished. Reboot to complete the process.
+
+20230510.0940 - Starting nix removal run. Logging to nix-uninstall.sh.log.
+Active mode. Possibly making changes.
+killing and removing launch daemon org.nixos.darwin-store
+Deleting 32 nix users
+Deleting nixbld group
+backing up nix-enabled dot file and restoring original: /etc/bash.bashrc
+backing up nix-enabled dot file and restoring original: /etc/bashrc
+backing up nix-enabled dot file and restoring original: /etc/zshrc
+20230510.0941 - Completed nix removal run.
+FAIL: Major failure during nix removal steps. Fix those before proceeding.
+
