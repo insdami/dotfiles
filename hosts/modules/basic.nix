@@ -22,6 +22,9 @@
     lz4
     git
     nixpkgs-fmt
+
+    pandoc
+    texlive.combined.scheme-full
   
   ] ++ lib.optionals stdenv.isLinux [
     iputils 

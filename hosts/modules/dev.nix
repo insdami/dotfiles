@@ -14,6 +14,7 @@
 
   home.packages = with pkgs; [
     # Utils
+    unixtools.watch
     mkcert
 
     # Editor
@@ -30,6 +31,10 @@
     docker
     docker-compose
     lazydocker
+
+    # Node
+    nodejs
   ];
+
 
 }

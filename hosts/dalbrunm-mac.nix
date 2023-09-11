@@ -31,5 +31,9 @@
     allowUnsupportedSystem = true;
   };
 
+  home.sessionVariables = {
+    OCI_CLI_AUTH="security_token";
+  };
+
 
 }
