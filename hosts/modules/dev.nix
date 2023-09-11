@@ -34,6 +34,9 @@
 
     # Node
     nodejs
+
+    grafana
+    sqlite
   ];
 
 

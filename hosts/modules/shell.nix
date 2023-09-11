@@ -36,6 +36,7 @@
       k = "kubectl";
       kx = "kubectx";
       kn = "kubens";
+      grafana-start="grafana-server -config ${pkgs.grafana}/share/grafana/conf/defaults.init";
     };
     
     history = {
