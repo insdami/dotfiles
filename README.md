@@ -18,3 +18,12 @@ sh <(curl -L https://releases.nixos.org/nix/nix-2.13.3/install)
 
 ### Uninstall
 Follow the steps from the [guide](https://nixos.org/manual/nix/stable/installation/installing-binary.html#macos) and there is also a handy [uninstall script](https://github.com/jacix/nixbits/blob/main/nix-uninstall.sh) for multi-user installations.
+
+### Re-install
+
+```
+sh <(curl -L https://raw.githubusercontent.com/jacix/nixbits/main/nix-uninstall.sh)
+sh <(curl -L https://releases.nixos.org/nix/nix-2.13.3/install)
+nix run home-manager/master -- init --switch
+home-manager switch --flake .#<profile> # home-manager switch --flake .#dalbrunm-mac
+```

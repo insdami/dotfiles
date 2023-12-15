@@ -16,6 +16,7 @@
     # Utils
     unixtools.watch
     mkcert
+    yamllint
 
     # Editor
     jetbrains.idea-community
