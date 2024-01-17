@@ -24,6 +24,6 @@ Follow the steps from the [guide](https://nixos.org/manual/nix/stable/installati
 ```
 sh <(curl -L https://raw.githubusercontent.com/jacix/nixbits/main/nix-uninstall.sh)
 sh <(curl -L https://releases.nixos.org/nix/nix-2.13.3/install)
-nix run home-manager/master -- init --switch
+nix run home-manager/release-23.11 -- init --switch
 home-manager switch --flake .#<profile> # home-manager switch --flake .#dalbrunm-mac
 ```
