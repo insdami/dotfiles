@@ -26,6 +26,10 @@
     kubectx
     kcat
     stern # multiple container tail
+    k9s
+
+    # kafka
+    kafkactl
 
     # Docker
     colima
@@ -38,6 +42,9 @@
 
     grafana
     sqlite
+
+    # Rust
+    rustup
   ];
 
 
