@@ -33,6 +33,18 @@
   ];
   
   programs.sioyek.enable = true;
+  programs.kitty = {
+    enable  = true;
+
+    settings = {
+      font_size = 16;
+    };
+
+    keybindings = {
+      "f1" = "toggle_layout stack";
+    };
+
+  };
 
 }
 

@@ -1,8 +1,6 @@
 hms() {
-  pushd ~/dotfiles
-  echo "$@"
+  hmd
   git add .
   home-manager switch --flake .#$1
-  popd
 }
 
