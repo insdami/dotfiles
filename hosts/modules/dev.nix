@@ -17,6 +17,7 @@
     unixtools.watch
     mkcert
     yamllint
+    cmake
 
     # Editor
     jetbrains.idea-community
