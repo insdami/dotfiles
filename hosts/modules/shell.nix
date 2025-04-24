@@ -3,7 +3,7 @@
   # ZSH
   programs.zsh = {
     enable = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     enableCompletion = true;
 
     initExtra = ''
@@ -21,6 +21,10 @@
 
         ## include config generated via "p10k configure" manually; 'p10k configure' can't write to zshrc itself
        [[ ! -f ~/dotfiles/hosts/modules/p10k-config/.p10k.zsh ]] || source ~/dotfiles/hosts/modules/p10k-config/.p10k.zsh    
+
+       # kitty; jump words
+       bindkey "\e[1;3D" backward-word # Option+Left
+       bindkey "\e[1;3C" forward-word # Option+Right
 
      '';
 

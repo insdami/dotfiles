@@ -11,16 +11,16 @@
     colima-start = "colima start --arch aarch64 --memory 8";
   };
 
-
-  home.packages = with pkgs; [
+ home.packages = with pkgs; [
     # Utils
     unixtools.watch
     mkcert
     yamllint
     cmake
+    gsl
 
     # Editor
-    jetbrains.idea-community
+    # jetbrains.idea-community
 
     # K8s
     kubectl
@@ -44,9 +44,17 @@
     grafana
     sqlite
 
+    graalvm-ce
+
     # Rust
     rustup
-  ];
 
+    # Erlang
+    erlang_27
+    rebar3
+    gleam
+
+
+    ];
 
 }

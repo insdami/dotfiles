@@ -14,8 +14,9 @@
 
     extraConfig = {
       pull.rebase = true;
-      init.defaultBranch = "main";
+      init.defaultBranch = "master";
       github.user = "insdami";
+      http.sslVerify = false;
 
       push.autoSetupRemote = true;
 

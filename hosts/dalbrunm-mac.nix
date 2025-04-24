@@ -7,7 +7,6 @@
     ./modules/neovim.nix
     ./modules/git.nix
     ./modules/dev.nix
-    ./modules/oci.nix
   ];
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -33,7 +32,10 @@
 
   home.sessionVariables = {
     OCI_CLI_AUTH="security_token";
+    FACP_SSH_HOME="$HOME/workspace/oracle/faaas_ssh_configs";
   };
+
+  programs.zsh.initExtra = "source $FACP_SSH_HOME/aliases";
 
 
 }

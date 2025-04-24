@@ -32,16 +32,17 @@
     systemd
   ];
   
-  programs.sioyek.enable = true;
   programs.kitty = {
     enable  = true;
 
     settings = {
-      font_size = 16;
+      font_size = 18;
     };
 
     keybindings = {
-      "f1" = "toggle_layout stack";
+      "ctrl+alt+z" = "toggle_layout stack";
+      "ctrl+alt+t" = "goto_layout tall";
+      "ctrl+alt+s" = "goto_layout stack";
     };
 
   };

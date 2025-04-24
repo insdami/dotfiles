@@ -1,4 +1,4 @@
-# Based on https://nix-community.github.io/home-manager/index.html#sec-flakes-standalone
+# Based on https://nix-community.github.io/home-manager/index.xhtml#sec-flakes-standalone
 {
   description = "Home Manager configuration";
 
